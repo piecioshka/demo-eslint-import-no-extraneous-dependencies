@@ -1,0 +1,24 @@
+{
+  "root": true,
+  "env": {
+    "es2022": true,
+    "node": true
+  },
+  "plugins": ["import"],
+  "extends": ["eslint:recommended", "plugin:import/recommended"],
+  "parserOptions": {
+    "ecmaVersion": 2022,
+    "sourceType": "module"
+  },
+  "rules": {
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        // BAD
+        "devDependencies": ["src/**", "tests/**"]
+        // OK
+        // "devDependencies": ["shared/**", "src/**", "tests/**"]
+      }
+    ]
+  }
+}
