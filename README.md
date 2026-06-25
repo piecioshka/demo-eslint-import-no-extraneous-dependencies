@@ -74,4 +74,4 @@ npm test
 
 ## License
 
-Public Domain / Unlicensed example.
+[The MIT License](https://piecioshka.mit-license.org) @ 2026
